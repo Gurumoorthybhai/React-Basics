@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+// import Home from './components/Home';
+import Counter from './component1/Counter'
+import CounterClass from './component1/counter-class';
+import Parent from './component1/hooks/useMemo/parent';
+
+import MainComponent from './component1/hooks/useCallback/parent-callback'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainComponent />
+      {/* { <Parent />} */}
+      {/* <Home /> */}
+      {/* <Counter />
+      <CounterClass /> */}
     </div>
   );
 }
